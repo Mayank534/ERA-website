@@ -40,7 +40,7 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.2, 1)}
         className="mt-4 text-taupe text-[1.250rem] max-w-3xl leading-[1.875rem]">
-          We are a team of <b>undergraduates</b> actively working with faculty and are dedicated to developing solutions to challenges in <b>autonomous robotics</b> and related domains. We develop cutting-edge robots aided by <b>research</b> and represent our university and nation in <b>international competitions</b> that see participants from prestigious colleges worldwide. We are working towards our first participation in the upcoming <b style={{ fontWeight: 'bold', color: '#6194fb' }}>(2024)</b> edition of the &nbsp; <a
+          We are a team of <b>undergraduates</b> actively working with faculty and are dedicated to developing solutions to challenges in <b>autonomous robotics</b> and related domains. We develop cutting-edge robots aided by <b>research</b> and represent our university and nation in <b>international competitions</b> that see participants from prestigious colleges worldwide. We are working towards our first participation in the upcoming <b style={{ fontWeight: 'bold', color: '#6194fb' }}>(2025)</b> edition of the &nbsp; <a
             href='https://msl.robocup.org/'
             style={{
             fontWeight: 'bold',
@@ -92,7 +92,7 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.2, 1)}
         className="mt-4 text-taupe text-[1.250rem] max-w-3xl leading-[1.875rem]">
-          RoboCup Middle Size League (MSL) is an international competition where teams of 5 fully autonomous robots play soccer with a regular-size FIFA soccer ball. The vision of the competition is to reach a level in autonomous robots where a team of fully autonomous robots can win against the most recent FIFA World Cup winner by the year 2050. We aim to be among the first entrants from India and not only compete but win! <br/><br/> <b style={{ fontWeight: 'bold', color: '#6194fb' }}>(01/03/24)</b> <b style={{ fontWeight: 'bold', color: '#000000' }}>: We just sent in our submission for the 2024 edition!</b><CustomButton2/>
+          RoboCup Middle Size League (MSL) is an international competition where teams of 5 fully autonomous robots play soccer with a regular-size FIFA soccer ball. The vision of the competition is to reach a level in autonomous robots where a team of fully autonomous robots can win against the most recent FIFA World Cup winner by the year 2050. We aim to be among the first entrants from India and not only compete but win! <br/><br/> <b style={{ fontWeight: 'bold', color: '#6194fb' }}>(28/02/25)</b> <b style={{ fontWeight: 'bold', color: '#000000' }}>: We just sent in our submission for the 2025 edition!</b><CustomButton2/>
           {/* <a
           href="https://www.dropbox.com/scl/fi/165w2ovsfg4wlif3zone6/Brochure.pdf?rlkey=wjhej532ayequjvny56ggnpjt&dl=0"
           style={{
