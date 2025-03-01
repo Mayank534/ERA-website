@@ -10,7 +10,9 @@ import { projects } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 import CustomButton3 from './Button_TeamHistory';
 import Navbar1 from './Navbar1';
-
+import teamHead1 from '../assets/team/head1.jpg';
+import teamHead2 from '../assets/team/head2.jpeg';
+import teamHead3 from '../assets/team/head3.jpeg';
 // import ArrowBackIosSharpIcon from '@mui/icons-material/ArrowBackIosSharp';
 import { useEffect } from 'react';
 import './InstaHandle.css'
@@ -196,6 +198,47 @@ const Team_history = () => {
             </a> */}
             </motion.p>
           </motion.div>
+          <div className="team-heads-section mt-8">
+            <h3 className="text-center text-white text-[24px] font-bold">Team Heads</h3>
+            <div className="flex flex-row justify-center items-center mt-4">
+              {/* Team Head 1 */}
+              <div className="team-head flex flex-col items-center mx-4">
+                <img
+                  src={teamHead1}
+                  alt="Team Head 1"
+                  className="w-[200px] h-[200px] rounded-lg object-cover"
+                />
+                <div className="mt-2 text-center">
+                  <p className="font-bold text-timberWolf">Mayank Agrawal</p>
+                  <p className="text-silver text-[14px]">mayanka22@iitk.ac.in</p>
+                </div>
+              </div>
+              {/* Team Head 2 */}
+              <div className="team-head flex flex-col items-center mx-4">
+                <img
+                  src={teamHead2}
+                  alt="Team Head 2"
+                  className="w-[200px] h-[200px] rounded-lg object-cover"
+                />
+                <div className="mt-2 text-center">
+                  <p className="font-bold text-timberWolf">Nikhil Gupta</p>
+                  <p className="text-silver text-[14px]">nikhilg22@iitk.ac.in</p>
+                </div>
+              </div>
+              {/* Team Head 3 */}
+              <div className="team-head flex flex-col items-center mx-4">
+                <img
+                  src={teamHead3}
+                  alt="Team Head 3"
+                  className="w-[200px] h-[200px] rounded-lg object-cover"
+                />
+                <div className="mt-2 text-center">
+                  <p className="font-bold text-timberWolf">Debraj Karamakar</p>
+                  <p className="text-silver text-[14px]">debrajk22@iitk.ac.in</p>
+                </div>
+              </div>
+            </div>
+          </div>
         <div className='InstaHandle'>
           <InstaHandle/>
         </div>
