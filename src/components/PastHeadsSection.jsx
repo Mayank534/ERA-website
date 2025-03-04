@@ -3,12 +3,12 @@ import React from 'react';
 import TeamHeadCard from './TeamHeadCard'; // Same card component used by current heads
 
 // Example data for past heads (update to real data/images)
-import pasthead1Img from '../assets/team/none.png';
+import pasthead1Img from '../assets/team/21head1.jpeg';
 import pasthead2Img from '../assets/team/21head2.jpeg';
-import pasthead3Img from '../assets/team/none.png';
+import pasthead3Img from '../assets/team/21head3.jpeg';
 import pasthead4Img from '../assets/team/21head4.jpeg';
 
-const pastHeadsData = [
+const heads2023_24 = [
   {
     name: 'Dhruva Singh Sachan',
     phone: '9621688942',
@@ -46,13 +46,66 @@ const pastHeadsData = [
     linkedinLink: 'https://www.linkedin.com/in/-rishi-agarwal-/',
   },
 ];
+// 2022-2023 Data (replace or update with actual 2022-23 heads)
+import pasthead5Img from '../assets/team/y20_head1.png';
+import pasthead6Img from '../assets/team/y20_head2.png';
+import pasthead7Img from '../assets/team/y20_head3.png';
+import pasthead8Img from '../assets/team/y20_head4.png';
+import pasthead9Img from '../assets/team/y20_head5.png';
 
+const heads2022_23 = [
+  {
+    name: 'Nishi Mehta',
+    phone: '9998218309',
+    email: 'nishim20@iitk.ac.in',
+    image: pasthead5Img,
+    githubLink: 'https://github.com/pastheadA',
+    instagramLink: 'https://www.instagram.com/pastheadA/',
+    linkedinLink: 'https://www.linkedin.com/in/pastheadA/',
+  },
+  {
+    name: 'Shubham Mittal',
+    phone: '6239930703',
+    email: 'N/A',
+    image: pasthead6Img,
+    githubLink: 'https://github.com/pastheadB',
+    instagramLink: 'https://www.instagram.com/pastheadB/',
+    linkedinLink: 'https://www.linkedin.com/in/pastheadB/',
+  },
+  {
+    name: 'Aditya Jain',
+    phone: '8700953230',
+    email: 'adityajain20@iitk.ac.in',
+    image: pasthead7Img,
+    githubLink: 'https://github.com/pastheadB',
+    instagramLink: 'https://www.instagram.com/pastheadB/',
+    linkedinLink: 'https://www.linkedin.com/in/pastheadB/',
+  },
+  {
+    name: 'Tejas Chikoti',
+    phone: '+1(412)8675244',
+    email: 'chikoti20@iitk.ac.in',
+    image: pasthead8Img,
+    githubLink: 'https://github.com/pastheadB',
+    instagramLink: 'https://www.instagram.com/pastheadB/',
+    linkedinLink: 'https://www.linkedin.com/in/pastheadB/',
+  },
+  {
+    name: 'Yukkta Seelam',
+    phone: '8660756781',
+    email: 'yukktas20@iitk.ac.in',
+    image: pasthead9Img,
+    githubLink: 'https://github.com/pastheadB',
+    instagramLink: 'https://www.instagram.com/pastheadB/',
+    linkedinLink: 'https://www.linkedin.com/in/pastheadB/',
+  },
+];
 const PastHeadsSection = () => {
   return (
     <section className="w-full flex flex-col items-center mt-10">
-      <h2 className="text-3xl font-bold mb-6 text-white">Past Heads</h2>
+      <h2 className="text-3xl font-bold mb-6 text-white">2023-2024</h2>
       <div className="flex flex-wrap gap-8 justify-center">
-        {pastHeadsData.map((head) => (
+        {heads2023_24.map((head) => (
           <TeamHeadCard
             key={head.name}
             name={head.name}
@@ -65,7 +118,25 @@ const PastHeadsSection = () => {
           />
         ))}
       </div>
+      {/* 2022-2023 Heading */}
+      <h2 className="text-3xl font-bold mb-6 text-white">2022-2023</h2>
+      <div className="flex flex-wrap gap-8 justify-center">
+        {heads2022_23.map((head) => (
+          <TeamHeadCard
+            key={head.name}
+            name={head.name}
+            phone={head.phone}
+            email={head.email}
+            image={head.image}
+            githubLink={head.githubLink}
+            instagramLink={head.instagramLink}
+            linkedinLink={head.linkedinLink}
+          />
+        ))}
+      </div>
+
     </section>
+    
   );
 };
 
